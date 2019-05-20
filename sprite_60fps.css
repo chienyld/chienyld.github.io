@@ -10,6 +10,7 @@
 /*::-webkit-scrollbar {
       width: 10px;
 }*/
+
 a:hover{
 	text-decoration: none;
 	color: rgba(211,211,211,1.00);
@@ -33,14 +34,14 @@ a:hover{
 	
 }
 .navbarleft{
-	margin-top: 10%;
-	margin-right: 3%;
-	padding-right: 0px;
+	margin-top: 9%;
+	margin-right: 8%;
+	padding-right:0px;
 	width: 11%;
 	position: fixed;
 	right: 0px;
 	z-index: 200;
-	font-size: 2em;
+	font-size: 1.95em;
 	font-weight: bold;
 }
 .content{
