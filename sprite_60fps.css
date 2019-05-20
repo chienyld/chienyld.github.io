@@ -6,6 +6,14 @@
     background-position: -11520px 0px;
   }
 }
+
+/*::-webkit-scrollbar {
+      width: 10px;
+}*/
+a:hover{
+	text-decoration: none;
+	color: rgba(211,211,211,1.00);
+}
 .shapeshifter {
   animation-duration: 1000ms;
   animation-timing-function: steps(60);
@@ -24,8 +32,20 @@
 	position: relative;
 	
 }
+.navbarleft{
+	margin-top: 10%;
+	margin-right: 3%;
+	padding-right: 0px;
+	width: 11%;
+	position: fixed;
+	right: 0px;
+	z-index: 200;
+	font-size: 2em;
+	font-weight: bold;
+}
 .content{
-	font-size: 56px;
+	background-color: rgba(220,220,220,0.65);
+	font-size: 24px;
 	font-weight: bold;
 	position: relative;
 	z-index: 100;
