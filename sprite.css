@@ -1,0 +1,256 @@
+@keyframes play60 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -11520px 0px;
+  }
+}
+
+/*::-webkit-scrollbar {
+      width: 10px;
+}*/
+
+a:hover{
+	text-decoration: none;
+	color: rgba(211,211,211,1.00);
+}
+.shapeshifter {
+  animation-duration: 1000ms;
+  animation-timing-function: steps(60);
+  
+  width: 192px;
+  height: 108px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+	/*animation-fill-mode: forwards;*/
+  
+}
+.shapeshifter.play {
+  animation-name: play60;
+}
+#wrapper{
+	position: relative;
+	
+}
+
+
+.navbarleft{
+	margin-top: 5%;
+	margin-right: 23%;
+	padding-right:0px;
+	width: 11%;
+	position: fixed;
+	right: 0px;
+	z-index: 200;
+	font-size: 1.95em;
+	font-weight: bold;
+}
+@media screen and (max-width: 900px) {
+	.navbarleft{
+		margin-right: 29%;
+	}
+}
+.content{
+	background-color: rgba(220,220,220,0.65);
+	font-size: 24px;
+	font-weight: bold;
+	position: relative;
+	z-index: 100;
+}
+.background{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -100;
+}
+
+.btn {	
+	font-weight: bold;
+	position: relative;	
+	padding-bottom: 2rem;
+	padding-top: 2rem;
+	padding-right: 3.1rem;
+	font-size: 1.5rem;
+	color: var(--inv);
+	letter-spacing: 1rem;
+	text-transform: uppercase;
+	transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+	user-select: none;
+}
+
+.btn:before, .btn:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+.btn:hover {
+	color: var(--def);
+	transition-delay: .6s;
+}
+
+.btn:hover:before {
+	transition-delay: 0s;
+}
+
+.btn:hover:after {
+	background: var(--inv);
+	transition-delay: .4s;
+}
+
+/* From Top */
+
+.from-top:before, 
+.from-top:after {
+	left: 0;
+	height: 0;
+	width: 100%;
+}
+
+.from-top:before {
+	bottom: 0;	
+	border: 1px solid var(--inv);
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.from-top:after {
+	top: 0;
+	height: 0;
+}
+
+.from-top:hover:before,
+.from-top:hover:after {
+	height: 100%;
+}
+
+/* From Left */
+
+.from-left:before, 
+.from-left:after {
+	top: 0;
+	width: 0;
+	height: 100%;
+}
+
+.from-left:before {
+	right: 0;
+	border: 1px solid var(--inv);
+	border-left: 0;
+	border-right: 0;	
+}
+
+.from-left:after {
+	left: 0;
+}
+
+.from-left:hover:before,
+.from-left:hover:after {
+	width: 100%;
+}
+
+/* From Right */
+
+.from-right:before, 
+.from-right:after {
+	top: 0;
+	width: 0;
+	height: 100%;
+}
+
+.from-right:before {
+	left: 0;
+	border: 1px solid var(--inv);
+	border-left: 0;
+	border-right: 0;	
+}
+
+.from-right:after {
+	right: 0;
+}
+
+.from-right:hover:before,
+.from-right:hover:after {
+	width: 100%;
+}
+
+/* From Middle */
+
+.from-middle:before {
+	top: 0;
+	left: 50%;
+	height: 100%;
+	width: 0;
+	border: 1px solid var(--inv);
+	border-left: 0;
+	border-right: 0;
+}
+
+.from-middle:after {
+	bottom: 0;
+	left: 0;
+	height: 0;
+	width: 100%;
+	background: var(--inv);
+}
+
+.from-middle:hover:before {
+	left: 0;
+	width: 100%;
+}
+
+.from-middle:hover:after {
+	top: 0;
+	height: 100%;
+}
+
+/* From Bottom */
+
+.from-bottom:before, 
+.from-bottom:after {
+	left: 0;
+	height: 0;
+	width: 100%;
+}
+
+.from-bottom:before {
+	top: 0;	
+	border: 1px solid var(--inv);
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.from-bottom:after {
+	bottom: 0;
+	height: 0;
+}
+
+.from-bottom:hover:before,
+.from-bottom:hover:after {
+	height: 100%;
+}
+
+
+/* ~~~~~~~~~~~~ GLOBAL SETTINGS ~~~~~~~~~~~~ */
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	--def: #96B7C4; 	
+	--inv: #fff;
+	display: flex;
+	
+	flex-direction: column;
+
+}
+
+html {
+	
+	font-family: 'Playfair Display', serif;
+}
+
