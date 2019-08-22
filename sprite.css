@@ -300,8 +300,17 @@ li {
 	font-size: 20px;
 	
 }
-
-
+.wboxch {
+	align-content: center;
+	align-items: center;
+	margin: 4rem 0 5rem 0;
+	text-align: center;
+	
+}
+.wboxch > h2 {
+	font-family:"Microsoft JhengHei";
+	font-size: 1.2vw;
+}
 .wbox {
 	background-color: #FFFFFF;
 	margin: 2rem 0 5rem 0;
@@ -324,6 +333,8 @@ li {
 }
 .foot > p {
 	color: rgba(234,234,234,1.00);
+	float: right;
+	bottom: 0;
 }
 /** box-shadow **/
 .box {
@@ -1323,20 +1334,20 @@ fieldset:disabled a.btn {
 }
 
 .btn-info {
-	padding: 1rem 2rem 1rem 2rem;
-	font-size: 1rem;
+	padding: 1.5rem 5rem 1.5rem 5rem;
+	font-size: 1.5rem;
   color: #fff;
   background-color: #17a2b8;
   border-color: #17a2b8;
 	align-content: center;
 	font-family: arial;
-	border-radius: 30px;
+	border-radius: 60px;
 }
 
 .btn-info:hover {
 	align-content: center;
 	font-family: arial;
-	border-radius: 30px;
+	border-radius: 60px;
   color: #fff;
   background-color: #138496;
   border-color: #117a8b;
