@@ -346,6 +346,43 @@
 					© Copyright 2019 Chien-Yu Lin. All Rights Reserved.
 				</p>
 			</div>
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD6_kLDvBRNZC3RNhZAQm28s70OtyVUls0",
+    authDomain: "cylcamever.firebaseapp.com",
+    databaseURL: "https://cylcamever.firebaseio.com",
+    projectId: "cylcamever",
+    storageBucket: "cylcamever.appspot.com",
+    messagingSenderId: "1073704588728",
+    appId: "1:1073704588728:web:86fc652d58c35f82c1eb4d"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+		<script>
+		function saveToFirebase(email) {
+    var emailObject = {
+        email: 12345zox@gmail.com
+    };
+
+    firebase.database().ref('subscription-entries').push().set(emailObject)
+        .then(function(snapshot) {
+            success(); // some success method
+        }, function(error) {
+            console.log('error' + error);
+            error(); // some error method
+        });
+}
+
+saveToFirebase(email);
+		</script>
 		<script>
 
 $(document).ready(function() {  
