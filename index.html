@@ -21,34 +21,34 @@
 	<script src="js/aos.js"></script>
 	
 	<style rel="stylesheet" type="text/css">
-	@media screen and (min-width: 0px) and (max-width: 1000px) {
-    #navvvv { display: none; }  /* show it on small screens */
+@media screen and (max-width: 1000px) {
+  .navvvv a:not(:first-child) {display: none;}
+  .navvvv a.icon {
+    float: right;
+    display: block;
+  }
 }
 
-    @media screen and (min-width: 1001px) {
-    #navvvv { display: block; }   /* hide it elsewhere */
+@media screen and (max-width: 1000px) {
+	.logo{
+		position: absolute;
+		top: -8rem;
+	}
+  .navvvv.responsive {position: relative;
+	}
+  .navvvv.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navvvv.responsive a {
+	font-size: 5rem;
+	text-align: center;
+    float: none;
+    display: block;
+  }
 }
 	</style>
-	<!--<style rel="stylesheet" type="text/css">
-				
-				body{
-	background-image:url(img/RRR.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-		}
-		.content{
-		background-image: url(SBG3.png);
-		}
-	@media only screen and (max-device-width:700px){
-		body{
-	background-image:url(/img/bgSS.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
-	}
-		.content{
-			background-image: url(SBG5.png)
-		}
-	}</style>-->
 </head>
 	<body>
 	<section id="one">
@@ -56,48 +56,32 @@
 			<div id="slider-area" class="owl-carousel">
 				<div style="background-image: url(img/003.jpg)"></div>
 				<div style="background-image: url(img/001.jpg)"></div>
-				<div style="background-image: url(img/BK.jpg)"></div>
 				<div style="background-image: url(img/002.jpg)"></div>
 			</div>
-		<div class="col-1 offset-6">
-			<a href="#two">
-			<i class="fas fa-chevron-down" style="font-size: 5rem;color:#FFFFFF;animation: breathe 1s infinite;transform: translateX(-90%)"></i>
-			</a>
+		<div class="row col-12">
+			<div class="col-lg-5 logo">
+				<img src="logo.png" style="height:70px;padding: 1rem 0 0 4rem">
+		
+			</div>
+			<div class="col-lg-6 col-md-12">
+				<div id="topnav" class="navvvv">
+					<a style="margin-top: 4rem"></a>
+					<a class="btnn from-top" href="#">Home</a>
+					<a class="btnn from-top" href="#two">About</a>
+					<a class="btnn from-top" href="#three">Gallery</a>
+					<a class="btnn from-top" href="#five">Portfolio</a>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    				<i class="fa fa-bars" style="font-size: 3rem"></i>
+  					</a>
+				</div>
+			</div>
 		</div>
-	<div id="navvvv" class="container-fluid">
-		<div class="col-4" style="float: left;padding-top: 6rem">
-			<ul class="navigation">
-				<li class="btnn from-top">
-					<a href="#">Home</a>
-				</li><br><br><br><br>
-				<li class="btnn from-top">
-					<a href="#two">About</a>
-				</li><br><br><br><br>
-				<li class="btnn from-top">
-					<a href="#three">Gallery</a>
-				</li><br><br><br><br>
-				<li class="btnn from-top">
-					<a href="#five">Portfolio</a>
-				</li><br><br><br><br><br><br><br><br><br><br><br>
-				<li>
-				<a href="https://www.instagram.com/chienyuj/">
-				<i class="fab fa-instagram" style="font-size: 3rem;margin: 0.5rem"></i>
-				</a>
-				<a href="https://www.facebook.com/chienyld">
-				<i class="fab fa-facebook-square" style="font-size: 3rem;margin: 0.5rem"></i>
-				</a>
-				<a href="">
-				<i class="fab fa-flickr" style="font-size: 3rem;margin: 0.5rem"></i>
-				</a>
-				</li>
-				</ul>
-		</div></div>
-			<br><br><br><br><br><br><br><br><br><br>
 		<div class="container-fluid">
-		<div class="col-8" style="float: right;margin-top:10rem">
-		<h1 style="font-family: Times New Roman;font-size: 5rem;color: #FFFFFF" class="heading" data-target-resolver></h1>
+		<div class="col-9 offset-2">
+			<br><br><br><br><br>
+		<h1 style="font-family:Helevetica,Arial;font-size: 5.5rem;color: #FFFFFF;letter-spacing: 6px" class="heading" data-target-resolver></h1>
 		</div>
-			<div class="col-1 offset-6">
+			<div class="col-2 offset-5" style="position: absolute;bottom: 1rem;text-align: center">
 			<a href="#two">
 				<i class="fas fa-chevron-down" style="font-size: 5rem;color:#FFFFFF;animation: breathe 1s infinite;transform: translateX(-90%);bottom: 0"></i>
 			</a>
@@ -125,7 +109,7 @@
 	<section id="two">
 	<div data-aos="fade-right">			
 	<div class="col-8 offset-2"><br>
-		<h1>Profile</h1>
+		<h1><b>Profile</b></h1>
 		<h3 style="color: #525252">HCHS~CSMU MI</h3>
 		<h3 style="font-family:Arial;line-height: 3rem">
 			Hi there,I'm Chien-Yu Lin.Currently studying at Medical Informatic department.<br>
@@ -146,7 +130,7 @@
 		<section id="three">
 			<div data-aos="fade-right">			
 			<h1 style="margin:6rem 0 6rem 15rem;font-size: 4rem">Photography
-				<a href="#four">
+				<a href="#pic">
 					<i class="fas fa-chevron-down" style="font-size: 3rem;color:#000000;animation: breathe 1s infinite;transform: translateX(-90%);margin-left: 5rem"></i>
 				</a>
 				</h1>
@@ -177,6 +161,8 @@
 			<h2>寵物寫真 / 活動攝影 / 小型商品攝影 / 室內攝影</h2>
 			</div>
 			</div>
+		</section>
+		<section id="pic">
 		<div class="container">
 			<div class="row">
 			<div class="col-4" style="margin:0;padding: 3px;" data-aos="fade-right" data-aos-duration="1200">
@@ -347,42 +333,24 @@
 				</p>
 			</div>
 		<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
-
+		<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#config-web-app -->
 
 <script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyD6_kLDvBRNZC3RNhZAQm28s70OtyVUls0",
-    authDomain: "cylcamever.firebaseapp.com",
-    databaseURL: "https://cylcamever.firebaseio.com",
-    projectId: "cylcamever",
-    storageBucket: "cylcamever.appspot.com",
-    messagingSenderId: "1073704588728",
-    appId: "1:1073704588728:web:86fc652d58c35f82c1eb4d"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+	function myFunction() {
+ 	var x = document.getElementById("topnav");
+ 	if (x.className === "navvvv") {
+    x.className += " responsive";
+ 	} else {
+    x.className = "navvvv";
+ 	}
+	}
 </script>
-		<script>
-		function saveToFirebase(email) {
-    var emailObject = {
-        email: 12345zox@gmail.com
-    };
 
-    firebase.database().ref('subscription-entries').push().set(emailObject)
-        .then(function(snapshot) {
-            success(); // some success method
-        }, function(error) {
-            console.log('error' + error);
-            error(); // some error method
-        });
-}
-
-saveToFirebase(email);
-		</script>
 		<script>
 
 $(document).ready(function() {  
@@ -478,12 +446,10 @@ const resolver = {
   } 
 }
 
-/* Some GLaDOS quotes from Portal 2 chapter 9: The Part Where He Kills You
- * Source: http://theportalwiki.com/wiki/GLaDOS_voice_lines#Chapter_9:_The_Part_Where_He_Kills_You
- */
+
 const strings = [
-  'Hi,there',
-  'Here is Chien-Yu Lin',
+  'Hi there',
+  'Here is Chien Yu Lin',
   'Welcome To My Site',
 ];
 
@@ -497,7 +463,7 @@ const options = {
   // Number of random characters to show
   iterations: 10,
   // Random characters to pick from
-  characters: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x', 'y', 'x'],
+  characters: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'l', 'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'v', 'y'],
   // String to resolve
   resolveString: strings[counter],
   // The element
