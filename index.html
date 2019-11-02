@@ -28,6 +28,9 @@
     float: right;
     display: block;
   }
+	.space {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 1000px) {
@@ -35,19 +38,20 @@
 		position: absolute;
 		top: -8rem;
 	}
-  .navvvv.responsive {position: relative;
+	.navvvv.responsive {position: relative;
 	}
-  .navvvv.responsive .icon {
+	.navvvv.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  .navvvv.responsive a {
+	.navvvv.responsive a {
 	font-size: 5rem;
 	text-align: center;
     float: none;
     display: block;
   }
+	
 }
 	</style>
 </head>
@@ -132,23 +136,24 @@
 		</section>
 		<section>
 		<div class="row"  style="padding-bottom: 20rem">
-		<div class="col-3"></div>
+		<div class="col-2"></div>
+		<div class="space" style="margin: 3.5rem"></div>
 		<div class="auto_scaling col-1">
-        <canvas id="layer6" width="300" height="200" class="anim_6"></canvas> 
-		<canvas id="layer8" width="300" height="200" class="anim_8"></canvas>        
-		<canvas id="layer7" width="300" height="200" class="anim_7"></canvas> 
+        <canvas id="layer6" width="200" height="200" class="anim_6"></canvas> 
+		<canvas id="layer8" width="100" height="60" class="anim_8"></canvas>        
+		<canvas id="layer7" width="200" height="200" class="anim_7"></canvas> 
 		</div>
 		<div class="col-1" style="margin-left: 5rem" ></div>	
 		<div class="auto_scaling col-1">
-        <canvas id="layer9" width="300" height="200" class="anim_6"></canvas> 
-		<canvas id="layer11" width="300" height="200" class="anim_8"></canvas>        
-		<canvas id="layer10" width="300" height="200" class="anim_7"></canvas> 
+        <canvas id="layer9" width="200" height="200" class="anim_6"></canvas> 
+		<canvas id="layer11" width="100" height="60" class="anim_8"></canvas>        
+		<canvas id="layer10" width="200" height="200" class="anim_7"></canvas> 
 		</div>
 		<div class="col-1" style="margin-left: 5rem" ></div>	
 		<div class="auto_scaling col-1">
-        <canvas id="layer12" width="300" height="200" class="anim_6"></canvas> 
-		<canvas id="layer14" width="300" height="200" class="anim_8"></canvas>        
-		<canvas id="layer13" width="300" height="200" class="anim_7"></canvas> 
+        <canvas id="layer12" width="200" height="200" class="anim_6"></canvas> 
+		<canvas id="layer14" width="100" height="60" class="anim_8"></canvas>        
+		<canvas id="layer13" width="200" height="200" class="anim_7"></canvas> 
 		</div>
 		</div>
 		</section>
