@@ -117,10 +117,10 @@
 			靜態網頁建置, 網頁前端UI/UX設計, 品牌識別, LOGO設計與發想, 名片設計 。<br>
 			活動攝影, 小型商品攝影(去背照/情境照), 寵物攝影 。<br>
 		</h3>
-		<h1 style="text-align: center;margin: 5rem 0 5rem 0;font-family: Microsoft JhengHei"></h1>
+		<!--<h1 style="text-align: center;margin: 5rem 0 5rem 0;font-family: Microsoft JhengHei"></h1>
 			<a href="#three">
 		<i class="fas fa-chevron-down" style="font-size: 3rem;margin:0.5rem;margin-bottom: 3rem;color:#252525;animation: breathe 1s infinite" data-aos="fade-right"></i>
-			</a>
+			</a>--><br><br><br>
 		</div>
 		</div>
 	</section>
@@ -128,7 +128,29 @@
 		<img src="img/BC3.jpg" style="width:100%" alt="林謙佑">
 		
 		<section>
-		<img src="img/cylintro.jpg" style="width:100%;margin-top: 10rem" alt="林謙佑">
+		<img src="img/cylintro.png" style="width:100%;margin-top: 10rem" alt="林謙佑">
+		</section>
+		<section>
+		<div class="row"  style="padding-bottom: 20rem">
+		<div class="col-3" style="margin-left: 5rem" ></div>
+		<div class="auto_scaling col-2">
+        <canvas id="layer6" width="300" height="200" class="anim_6"></canvas> 
+		<canvas id="layer8" width="300" height="200" class="anim_8"></canvas>        
+		<canvas id="layer7" width="300" height="200" class="anim_7"></canvas> 
+		</div>
+			
+		<div class="auto_scaling col-2">
+        <canvas id="layer9" width="300" height="200" class="anim_6"></canvas> 
+		<canvas id="layer11" width="300" height="200" class="anim_8"></canvas>        
+		<canvas id="layer10" width="300" height="200" class="anim_7"></canvas> 
+		</div>
+			
+		<div class="auto_scaling col-2">
+        <canvas id="layer12" width="300" height="200" class="anim_6"></canvas> 
+		<canvas id="layer14" width="300" height="200" class="anim_8"></canvas>        
+		<canvas id="layer13" width="300" height="200" class="anim_7"></canvas> 
+		</div>
+		</div>
 		</section>
 		<section id="three">
 			<div data-aos="fade-right">			
@@ -515,6 +537,67 @@ resolver.resolve(options, callback);
 $(function() {
   AOS.init();
 });
+			
+		
+/*var canvas= document.getElementById("cav");
+var ctx=canvas.getContext("2d");
+ctx.beginPath();
+ctx.arc(200,80,60,0,2*Math.PI);
+ctx.stroke();*/
+
+var c6=document.getElementById("layer6");
+var ctx6=c6.getContext("2d");  
+ctx6.fillStyle="#FF931E";ctx6.beginPath();
+ctx6.arc(100,100,60,0,Math.PI*2,true);
+ctx6.closePath();ctx6.fill();
+var c8=document.getElementById("layer8");
+var ctx8=c8.getContext("2d");
+ctx8.fillStyle = "#000"; 
+ctx8.fillStyle="#fff";ctx8.fillRect(80,20,50,40);    
+var c7=document.getElementById("layer7");
+var ctx7=c7.getContext("2d");     
+ctx7.fillStyle="#fff";ctx7.beginPath();
+ctx7.arc(100,100,50,0,Math.PI*2,true);
+ctx7.closePath();ctx7.fill();
+ctx7.fillStyle = "#000";ctx7.font ="1.3rem Arial";
+ctx7.fillText("HTML5", 66, 105);  
+
+			
+var c6=document.getElementById("layer9");
+var ctx6=c6.getContext("2d");  
+ctx6.fillStyle="#29ABE2";ctx6.beginPath();
+ctx6.arc(100,100,60,0,Math.PI*2,true);
+ctx6.closePath();ctx6.fill();
+var c8=document.getElementById("layer11");
+var ctx8=c8.getContext("2d");
+ctx8.fillStyle = "#000"; 
+ctx8.fillStyle="#fff";ctx8.fillRect(80,20,50,40);    
+var c7=document.getElementById("layer10");
+var ctx7=c7.getContext("2d");     
+ctx7.fillStyle="#fff";ctx7.beginPath();
+ctx7.arc(100,100,50,0,Math.PI*2,true);
+ctx7.closePath();ctx7.fill();
+ctx7.fillStyle = "#000";ctx7.font ="1.4rem Arial";
+ctx7.fillText("CSS3", 72, 105);  
+
+var c6=document.getElementById("layer12");
+var ctx6=c6.getContext("2d");  
+ctx6.fillStyle="#F9EC4B";ctx6.beginPath();
+ctx6.arc(100,100,60,0,Math.PI*2,true);
+ctx6.closePath();ctx6.fill();
+var c8=document.getElementById("layer14");
+var ctx8=c8.getContext("2d");
+ctx8.fillStyle = "#000"; 
+ctx8.fillStyle="#fff";ctx8.fillRect(80,20,50,40);    
+var c7=document.getElementById("layer13");
+var ctx7=c7.getContext("2d");     
+ctx7.fillStyle="#fff";ctx7.beginPath();
+ctx7.arc(100,100,50,0,Math.PI*2,true);
+ctx7.closePath();ctx7.fill();
+ctx7.fillStyle = "#000";ctx7.font ="1.2rem Arial";
+ctx7.fillText("JavaScript", 55, 105);  
+
+
 </script>
 
 </body>
