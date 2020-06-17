@@ -14,9 +14,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/264d4d157e.js"></script>
 	<link rel="stylesheet" type="text/css" href="sprite.css"/>
-    <link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/aos.css">
 	<script src="js/aos.js"></script>
+	<script src="js/resolver.js"></script>
+	<script>
+	$(function() {
+		AOS.init();
+	  });
+	</script>
 	<style rel="stylesheet" type="text/css">
 	@media screen and (max-width: 999px) {
 	.navvvv a:not(:first-child) {display: none;}
@@ -507,10 +512,10 @@
 					© Copyright 2019 Chien-Yu Lin. All Rights Reserved.
 				</p>
 			</div>
-		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<!-- The core Firebase JS SDK is always required and must be listed first 
 		<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>-->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#config-web-app -->
@@ -526,7 +531,7 @@
 	}
 </script>
 
-		<script>
+<script>
 
 $(document).ready(function() {  
 $('a[href^="#"]').click(function() {  
@@ -536,28 +541,7 @@ if (target.length == 0) target = $('html');
 $('html, body').animate({ scrollTop: target.offset().top }, 1500);  
 return false;  
 });  
-});
-	
-$('#slider-area').owlCarousel({
-loop: true,
-autoplay:true,
-animateOut:'fadeOut',
-responsive: {
-0: {
-items: 1
-},
-600: {
-items: 1
-},
-1000: {
-items: 1
-}
-}
-})
-			
-
-			
-			
+});		
 const resolver = {
   resolve: function resolve(options, callback) {
     // The string to resolve
@@ -660,20 +644,13 @@ function callback() {
 }
 
 resolver.resolve(options, callback);
-			
-			
-			
-$(function() {
-  AOS.init();
-});
-			
-		
 /*var canvas= document.getElementById("cav");
 var ctx=canvas.getContext("2d");
 ctx.beginPath();
 ctx.arc(200,80,60,0,2*Math.PI);
 ctx.stroke();*/
-
+</script>
+<script>
 var c6=document.getElementById("layer6");
 var ctx6=c6.getContext("2d");  
 ctx6.fillStyle="#FF931E";ctx6.beginPath();
@@ -725,8 +702,6 @@ ctx7.arc(100,100,50,0,Math.PI*2,true);
 ctx7.closePath();ctx7.fill();
 ctx7.fillStyle = "#000";ctx7.font ="26px Arial";
 ctx7.fillText("JS", 85, 105);  
-
-
 </script>
 
 </body>
