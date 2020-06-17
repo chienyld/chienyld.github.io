@@ -20,7 +20,19 @@
 		opacity: 0.5;
 	}
 }
-
+a:active, a:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+}
+.noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 #layer6,#layer7,#layer8{position: absolute;left: 0px;top: 0px;}
 .anim_8{-webkit-animation-duration: 1.5s;
 -webkit-animation-iteration-count:infinite;
