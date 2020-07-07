@@ -1,707 +1,245 @@
-<!DOCTYPE HTML>
-<html lang="zh-tw">
+<!DOCTYPE html>
+<html lang="zh-TW">
 <head>
-	<meta charset="UTF-8">
-	<meta name="Author" CONTENT="林謙佑"> 
-	<meta name="Description" content="林謙佑, chienyld, Chien yu lin, 網頁設計, CYL Design">
-	<meta name="keywords" content="Chien yu lin, 林謙佑, CYL design, CYL photography, chienyld"/>
-	<meta name="google-site-verification" content="N2yUSAEvPeHxY_wqZfhJlkmIwygWGpB9Mqd1cefb5DY" />
-	<meta name="theme-color" content="#000000">
-	<title>Chien's Site</title>
-	
-    <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
-	<link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script src="https://kit.fontawesome.com/264d4d157e.js"></script>
-	<link rel="stylesheet" type="text/css" href="sprite.css"/>
-	<link rel="stylesheet" href="css/aos.css">
-	<script src="js/aos.js"></script>
-	<script src="js/resolver.js"></script>
-	<script>
-	$(function() {
-		AOS.init();
-	  });
-	</script>
-	<style rel="stylesheet" type="text/css">
-	@media screen and (max-width: 999px) {
-	.navvvv a:not(:first-child) {display: none;}
-	.navvvv a.icon {
-	float: right;
-	display: block;
-	}
-	.space {
-	display: none;
-	}
-	.heading{
-	display: block;
-	}
-	.logo{
-	position: absolute;
-	top: -8rem;
-	}
-	.navvvv.responsive {position: relative;
-	}
-	.navvvv.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    }
-	.navvvv.responsive a {
-	font-size: 5rem;
-	text-align: center;
-    float: none;
-    display: block;
-    }
-	
-}
-	
-		.head{
-			background-image:url("floatbg.png");
-			height: 100%;
-			width: 100%;
-			background-size: cover;
-			}
-			@keyframes float {
-			0% {
-				/*box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/
-				transform: translatey(0px);
-			}
-			50% {
-				/*box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);*/
-				transform: translatey(-20px);
-			}
-			100% {
-				/*box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/
-				transform: translatey(0px);
-			}
-			}
-		.floating {
-					width: 150px;
-					height: 100%;
-					/*box-sizing: border-box;
-					border: 5px white solid;
-					border-radius: 50%;
-					overflow: hidden;
-					box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);*/
-					transform: translatey(0px);
-					animation: float 6s ease-in-out infinite;
-					img { width: 100%; height: auto; }
-				}
-		.row{
-			margin-left: margin:-10px;
-			margin-right: margin:-10px
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,ie=edge">
+    <meta name="Author" CONTENT="林謙佑"> 
+    <meta name="Description" content="林謙佑, chienyld, Chien yu lin, 網頁設計, CYL Design">
+    <meta name="keywords" content="Chien yu lin, 林謙佑, CYL design, CYL photography, chienyld"/>
+    <meta name="google-site-verification" content="N2yUSAEvPeHxY_wqZfhJlkmIwygWGpB9Mqd1cefb5DY" />
+    <meta name="theme-color" content="#000000">
+    <title>Chien's Site</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./menu.css" />
+    <link rel="stylesheet" href="./bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="./stroke.css" />
+    <link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+
 </head>
-	<body>
-	<section id="one">
-		<div id="wrapper" class="head">		
-			<!--<div id="slider-area" class="owl-carousel">
-				<div style="background-image: url(img/003.jpg)"></div>
-				<div style="background-image: url(img/001.jpg)"></div>
-				<div style="background-image: url(img/002.jpg)"></div>
-			</div>-->
-		<div class="row col-12">
-			<div class="col-lg-4 logo">
-				<img src="logo.png" style="height:70px;padding: 1rem 0 0 4rem">
-			</div>
-			<div class="col-lg-8 col-md-12">
-				<div id="topnav" class="navvvv">
-					<a style="margin-top: 4rem"></a>
-					<a class="btnn from-top" href="#">Home</a>
-					<a class="btnn from-top" href="#two">About</a>
-					<a class="btnn from-top" href="#three">Gallery</a>
-					<a class="btnn from-top" href="#five">Projects</a>
-					<a href="javascript:void(0);" class="icon noSelect" onclick="myFunction()">
-    				<i class="fa fa-bars" style="font-size: 3rem"></i>
-  					</a>
-				</div>
-			</div>
-		
-		</div>
-		<div class="container-fluid">
-		<div class="col-9 offset-2">
-			<br><br><br><br><br>
-		
-		</div>
-			<div class="row justify-content-md-center">
-			<div class="col-lg-6 col-sm-12">
-				<img id="floatlogo" src="float2.png" class="floating" style="width: 100%;width: 100%">
-			</div>
-			</div>
-			<div class="col-2 offset-5" style="position: absolute;bottom: 1rem;text-align: center">
-			<h1 style="font-family:Helevetica,Arial;font-size: 5.5rem;color: #FFFFFF;letter-spacing: 6px" class="heading" data-target-resolver></h1>
-			<a href="#two">
-			
-				<i class="fas fa-chevron-down" style="font-size: 5rem;color:#FFFFFF;animation: breathe 1s infinite;transform: translateX(-90%);bottom: 0"></i>
-			</a>
-		</div>
-			<!--<ul class="navigation">
-			<li>
-				<a href="https://www.instagram.com/chienyuj/">
-				<i class="fab fa-instagram" style="font-size: 3rem;margin: 0.5rem"></i>
-				</a>
-				<a href="https://www.facebook.com/chienyld">
-				<i class="fab fa-facebook-square" style="font-size: 3rem;margin: 0.5rem"></i>
-				</a>
-				<a href="">
-				<i class="fab fa-flickr" style="font-size: 3rem;margin: 0.5rem"></i>
-				</a>
-				</li>
-			</ul>-->
-		
-	</div>
-	</div>
-		
-		</section>
-		
-	
-	<section id="two">
-	<div data-aos="fade-right">			
-	<div class="col-8 offset-2"><br>
-		<h1><b>About</b></h1>
-		<h3 style="font-family:Arial,Microsoft JhengHei;line-height: 4rem">
-			Hi, 我是 Chien-Yu Lin, 自由接案工作者, 以網頁設計為主 。<br>
-			服務項目包刮:<br>
-			靜態網頁建置, 網頁前端UI/UX設計, 品牌識別, LOGO設計與發想, 名片設計 。<br>
-			活動攝影, 小型商品攝影(去背照/情境照), 寵物攝影 。<br>
-		</h3>
-		<!--<h1 style="text-align: center;margin: 5rem 0 5rem 0;font-family: Microsoft JhengHei"></h1>
-			<a href="#three">
-		<i class="fas fa-chevron-down" style="font-size: 3rem;margin:0.5rem;margin-bottom: 3rem;color:#252525;animation: breathe 1s infinite" data-aos="fade-right"></i>
-			</a>--><br><br><br>
-		</div>
-		</div>
-	</section>
-		
-		<img src="img/BC3.jpg" style="width:100%" alt="林謙佑">
-		
-		<section>
-		<img src="img/cylintro.png" style="width:100%;margin-top: 10rem" alt="林謙佑">
-		</section>
-		<section>
-		
-		<div class="col-12">
-		<div class="row"  style="padding-bottom: 20rem;">
-		<div class="col-2"></div>
-		<div class="space" style="margin: 3.5rem"></div>
-		<div class="auto_scaling col-1">
-        <canvas id="layer6" width="200" height="200" class="anim_6"></canvas> 
-		<canvas id="layer8" width="100" height="60" class="anim_8"></canvas>        
-		<canvas id="layer7" width="200" height="200" class="anim_7"></canvas> 
-		</div>
-		<div class="col-1" style="margin-left: 5rem" ></div>	
-		<div class="auto_scaling col-1">
-        <canvas id="layer9" width="200" height="200" class="anim_6"></canvas> 
-		<canvas id="layer11" width="100" height="60" class="anim_8"></canvas>        
-		<canvas id="layer10" width="200" height="200" class="anim_7"></canvas> 
-		</div>
-		<div class="col-1" style="margin-left: 5rem" ></div>	
-		<div class="auto_scaling col-1">
-        <canvas id="layer12" width="200" height="200" class="anim_6"></canvas> 
-		<canvas id="layer14" width="100" height="60" class="anim_8"></canvas>        
-		<canvas id="layer13" width="200" height="200" class="anim_7"></canvas> 
-		</div>
-		</div>	
-		
-		<div class="row">
-		<div class="col-2"></div>
-		<div class="col-1" data-aos="fade-right" data-aos-duration="1600"><img src="img/Photoshop.svg"></div>	
-		<div class="col-1"></div>	
-		<div class="col-1" data-aos="fade-right" data-aos-duration="1400"><img src="img/Lightroom.svg"></div>
-		<div class="col-2">
-			<div class="row">
-			<div class="col-3"></div>
-			<div class="col-6" style="align-content: center" data-aos="fade-right" data-aos-duration="1200">
-			<img src="img/Illustrator.svg">	
-			</div>
-			<div class="col-3"></div>
-			</div>
-		</div>
-		<div class="col-1" data-aos="fade-right" data-aos-duration="1000"><img src="img/Dreamweaver.svg"></div>
-		<div class="col-1"></div>	
-		<div class="col-1" data-aos="fade-right" data-aos-duration="800"><img src="img/InDesign.svg"></div>	
-		</div>
-		</div>
-			
-		</section>
-		<section id="three">
-			<div data-aos="fade-right">			
-			<h1 style="margin:6rem 0 6rem 15rem;font-size: 4rem">Photography
-				<a href="#pic">
-					<i class="fas fa-chevron-down" style="font-size: 3rem;color:#000000;animation: breathe 1s infinite;transform: translateX(-90%);margin-left: 5rem"></i>
-				</a>
-				</h1>
-			</div>
-		</section>	
-		<section id="four">
-			<img src="img/p0.JPG" style="width: 100%" alt="chienyld">
-			
-			<ul class="navigation2" style="margin-left: 15rem">
-				<li class="btnn from-top">
-					<a href="pportraits.html">Portraits</a>
-				</li>
-				<li class="btnn from-top">
-					<a href="plandscape.html">Landscape</a>
-				</li>
-				<li class="btnn from-top">
-					<a href="psteets.html">Streets</a>
-				</li>
-				<li class="btnn from-top">
-					<a href="ppersonal.html">Personal</a>
-				</li>
-				</ul>
-		
-		
-			<img src="img/004.jpg" style="width: 100%">
-			<div class="col-12">
-				<div class="wboxch">
-			<h2>寵物寫真 / 活動攝影 / 小型商品攝影 / 室內攝影</h2>
-			</div>
-			</div>
-		</section>
-		<section id="pic">
+<body>
+<div id="app">
+<div v-if="isMobile()" style="overflow: hidden;">
+<div class="swipe">
+  <svg>
+    <image xlink:href="icon/swipe.svg"width="30px" height="80px"/>
+  </svg>
+</div>
+<div class="col-12" style="height:2vh;margin-top: 15vh;padding-left: 4vh;">
+  <svg width="100%" height="220px">
+    <g>
+      <polygon class="path" fill="black" stroke="white" stroke-width="2" points="175.82,154 159.39,137.63 143.01,154 	"/>
+      <g>
+        <polyline class="path" fill="black" stroke="white" stroke-width="2" points="297.72,115.07 227.39,115.07 205.12,137.63 275.46,137.63 297.72,115.07 297.15,115.07 		"/>
+      </g>
+      <path class="path" fill="black" stroke="white" stroke-width="2" d="M251.42,45.6l-18.19,18.19l-73.83,73.83L79.63,58.13C71.39,50.36,60.29,45.6,48.07,45.6
+        c-25.41,0-46.01,20.6-46.01,46.01s20.6,46.01,46.01,46.01c19.06,0,33.8-10.27,40.79-26.79L70.28,91.61
+        c0,12.26-9.94,22.19-22.19,22.19S25.9,103.87,25.9,91.61s9.94-22.19,22.19-22.19c0,0,7.07-1.24,14.66,6.23l3.97,3.91l58.98,58.07
+        l0,0h66.44l41.08-41.08l18.19-18.19V45.6"/>
+      </svg>
+  </div>
+  <div class="hello" style="margin-top: 20vh;"><h1>Hello</h1></div>
+  <div class="fade"><h2>Here Is</h2></div>
+  <div class="fade"><h2>Chien-Yu Lin</h2></div>
+  <div class="fade"><h2>I Build Websites</h2></div>
+  <div class="fade"><h2>I Shoot Photos</h2></div>
+  <div class="fade"><h2>I Design</h2></div>
+  <div class="fade"><h2>I <strong style="color: #2A9DF4">Create.</strong></h2></div>
+  <div class="fade"><h2>Services</h2></div>
+  <div class="fade" style="padding-left: 5%;padding-right: 5%;margin:0;padding: 10px;">
+    <div class="mbox" id="blue">
+      <h6 style="color:#9a3ee6">Web Design</h6><hr>
+      <h6>網頁設計</h6>
+      <h6>電子商務</h6>
+      <h6>會員系統</h6>
+      <h6>訂單系統</h6>
+      <h4>PHP+Laravel+MySQL</h4>
+    </div>
+  </div>
+  <div class="fade" style="padding-left: 5%;padding-right: 5%;margin:0;padding: 10px;">
+    <div class="mbox" id="purple">
+      <h6 style="color:#2A9DF4">Branding</h6><hr>
+      <h6>品牌視覺</h6>
+      <h6>Logo設計</h6>
+      <h6>名片設計</h6>
+      <h6>廣告設計</h6>
+      <h4>Adobe Illustrator</h4>
+    </div>
+    </div>
+    <div class="fade" style="padding-left: 5%;padding-right: 5%;margin:0;padding: 10px;">
+    <div class="mbox" id="yellow">
+      <h6 style="color:#41cccc">Photography</h6><hr>
+      <h6>小型商品攝影</h6>
+      <h6>圖片去背/微後製</h6>
+      <h6>食物攝影</h6>
+      <h6>互惠攝影</h6>
+      <h4>Photoshop+Lightroom</h4>
+    </div>
+    </div>
 
-		<!--<div class="container">
-			<div class="row">
-			<div class="col-4" style="margin:0;padding: 3px;" data-aos="fade-right" data-aos-duration="1200">
-			<img src="img/p4.jpg" style="width: 100%" alt="林謙佑">
-			</div>
-			<div class="col-4" style="margin:0;padding: 3px;" data-aos="fade-right" data-aos-duration="1000">
-			<img src="img/p5.jpg" style="width: 100%" alt="林謙佑">
-			</div>
-			<div class="col-4" style="margin:0;padding: 3px;" data-aos="fade-right" data-aos-duration="800">
-			<img src="img/p6.jpg" style="width: 100%" alt="林謙佑">
-			</div>
-			</div>
-		</div>-->
-		<div class="container">
-			<div class="row">
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-right" data-aos-duration="800">
-			<img src="img/p9.jpg" style="width: 100%" alt="林謙佑">
-			</div>
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-right" data-aos-duration="1200">
-			<img src="img/p10.jpg" style="width: 100%" alt="林謙佑">
-		 	</div>
-			</div>
-		</div>	
-		
-		<div class="container">
-			<div class="row">
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-right" data-aos-duration="800">
-			<img src="img/a.jpg" style="width: 100%" alt="林謙佑">
-			</div>
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-right" data-aos-duration="1200">
-			<img src="img/b.jpg" style="width: 100%" alt="林謙佑">
-			</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-left" data-aos-duration="800">
-			<img src="img/p11.jpg" style="width: 100%" alt="林謙佑">
-			</div>
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-left" data-aos-duration="1200">
-			<img src="img/p12.jpg" style="width: 100%" alt="林謙佑">
-		 	</div>
-			</div>
-		</div>	
-		<div class="container">
-			<div class="row">
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-right" data-aos-duration="800">
-			<img src="img/p15.jpg" style="width: 100%" alt="林謙佑">
-			</div>
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-right" data-aos-duration="1200">
-			<img src="img/p16.jpg" style="width: 100%" alt="林謙佑">
-		 	</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-			<div class="col-12" style="margin:0;padding: 3px;" data-aos="fade-left" data-aos-duration="800">
-			<img src="img/p17.jpg" style="width: 100%" alt="林謙佑">
-			</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-right" data-aos-duration="800">
-			<img src="img/p18.jpg" style="width: 100%" alt="林謙佑">
-			</div>
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-right" data-aos-duration="1200">
-			<img src="img/p19.jpg" style="width: 100%" alt="林謙佑">
-		 	</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-left" data-aos-duration="800">
-			<img src="img/p20.jpg" style="width: 100%" alt="林謙佑">
-			</div>
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-left" data-aos-duration="1200">
-			<img src="img/p21.jpg" style="width: 100%" alt="林謙佑">
-		 	</div>
-			</div>
-		</div>	
-		<div class="container">
-			<div class="row">
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-right" data-aos-duration="800">
-			<img src="img/p24.jpg" style="width: 100%" alt="林謙佑">
-			</div>
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-right" data-aos-duration="1200">
-			<img src="img/p23.jpg" style="width: 100%" alt="林謙佑">
-		 	</div>
-			</div>
-		</div>	
-		<div class="container">
-			<div class="row">
-			<div class="col-12" style="margin:0;padding: 3px;" data-aos="fade-left" data-aos-duration="800">
-			<img src="img/p22.jpg" style="width: 100%" alt="林謙佑">
-			</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-right" data-aos-duration="800">
-			<img src="img/p13.jpg" style="width: 100%" alt="林謙佑">
-			</div>
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-right" data-aos-duration="1200">
-			<img src="img/p14.jpg" style="width: 100%" alt="林謙佑">
-		 	</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-			<div class="col-4" style="margin:0;padding: 3px;" data-aos="fade-left" data-aos-duration="1200">
-			<img src="img/p1.jpg" style="width: 100%" alt="chienyld">
-			</div>
-			<div class="col-4" style="margin:0;padding: 3px;" data-aos="fade-left" data-aos-duration="1000">
-			<img src="img/p2.jpg" style="width: 100%" alt="chienyld">
-			</div>
-			<div class="col-4" style="margin:0;padding: 3px;" data-aos="fade-left" data-aos-duration="800">
-			<img src="img/p3.jpg" style="width: 100%" alt="chienyld">
-			</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-right" data-aos-duration="800">
-			<img src="img/pic/55.jpg" style="width: 100%" alt="chienyld">
-			</div>
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-right" data-aos-duration="1200">
-			<img src="img/83.jpg" style="width: 100%" alt="chienyld">
-			</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="row">
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-left" data-aos-duration="800">
-			<img src="img/p7.jpg" style="width: 100%" alt="林謙佑">
-			</div>
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-left" data-aos-duration="1200">
-			<img src="img/p8.jpg" style="width: 100%" alt="林謙佑">
-			</div>
-			</div>
-		</div>
-		
-		</section>
-		
-		
-		
-		<section id="five">
-			<div data-aos="fade-right">			
-			<h1 style="margin:6rem 0 6rem 15rem;font-size: 4rem">Projects</h1>
-			</div>
-		<div class="container">
-			<div class="row">
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-right" data-aos-duration="1200">
-			<a href="#">
-			<img src="img/infographic.png" style="width: 100%" alt="林謙佑">
-			</a>
-			</div>
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-left" data-aos-duration="1200">
-			<img src="img/DC.png" style="width: 100%" alt="林謙佑">
-		 	</div>
-			</div>
-			<div class="row">
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-right" data-aos-duration="1200">
-			<a href="#">
-			<img src="img/UI.png" style="width: 100%" alt="林謙佑">
-			</a>
-			</div>
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-left" data-aos-duration="1200">
-			<img src="img/csmu60logo.jpg" style="width: 100%" alt="林謙佑">
-			 </div>
-			 <div class="row">
-				<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-right" data-aos-duration="1200">
-				<a href="#">
-				<img src="img/logoCC2color6.jpg" style="width: 100%" alt="林謙佑">
-				</a>
-				</div>
-				<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-left" data-aos-duration="1200">
-				<img src="img/C輝recolor.jpg" style="width: 100%" alt="林謙佑">
-				 </div>
-				</div>
-			<div class="row">
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-right" data-aos-duration="1200">
-			<a href="#">
-			<img src="img/dolly3.png" style="width: 100%" alt="林謙佑">
-			</a>
-			</div>
-			<div class="col-6" style="margin:0;padding: 3px;" data-aos="fade-left" data-aos-duration="1200">
-			<img src="img/Mdecision.jpg" style="width: 100%" alt="林謙佑">
-		 	</div>
-			</div>
-				
-			
-			
-			</div>
-		</div>
-		</section>	
-		<section id="six">
-				<div class="wbox" data-aos="fade-right">
-		<!--<div class="highlight">
-			<div class="clearfix">
-				<div class="testimonial">-->
-					
-					<h1>Contact Me</h1><hr>
-					<br>
-				<p>
-					<span><strong>E-Mail:</strong></span> 12345zox@gmail.com
-				</p><br>
-				<p>
-					<span><strong>Phone:</strong></span> (+886) 0908150818
-				</p><br>
-				<p>
-					<span><strong>Line ID:</strong></span> 11jlin
-				</p>
-			
-				<br><br>
-			
-				<h1>Send Me Message</h1><hr><br>
-				<p>
-					If you're having problems with the web site, then don't hesitate to ask for help.
-				</p><br><br><br>
-			<div style="text-align: center">
-				<button type="button" class="btn btn-info" onclick="location.href='mailto:12345zox@gmail.com'">Send Me an email</button>
-			</div>
+  
+  <div class="fade"><h2>See My Projects</h2></div>
 
+  <div class="outer-menu" style="left: 40%;margin-bottom: 3vh;">
+    <input class="checkbox-toggle" type="checkbox" />
+    <div class="hamburger">
+      <div></div>
+    </div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="photography.html">Photography</a></li>
+            <li><a href="branding.html">Graphic</a></li>
+            <li><a href="websites.html">Websites</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+ <div class="w"><h2>Contact</h2></div>
 
-				
-			</div>
-	
-				</section>
-		<div class="foot" style="background-color: rgba(77,77,77,1.00)">
-			<div class="navigation">
-			<ul>
-			<li>
-				<a href="https://www.instagram.com/chienyuj/">
-				<i class="fab fa-instagram" style="font-size: 3rem;margin: 0.5rem"></i>
-				</a>
-				<a href="https://www.facebook.com/chienyld">
-				<i class="fab fa-facebook-square" style="font-size: 3rem;margin: 0.5rem"></i>
-				</a>
-				<a href="">
-				<i class="fab fa-flickr" style="font-size: 3rem;margin: 0.5rem"></i>
-				</a>
-				</li>
-			</ul>
-				</div>
-			<br><br>
-				<p>
-					© Copyright 2019 Chien-Yu Lin. All Rights Reserved.
-				</p>
-			</div>
-		<!-- The core Firebase JS SDK is always required and must be listed first 
-		<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-firestore.js"></script>-->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#config-web-app -->
+  <div class="w">
+    <a href="https://www.facebook.com/chienyld">
+      <svg>
+        <image xlink:href="icon/facebook.svg"width="60px" height="60px"/>
+      </svg>
+    </a>
+    <a href="https://line.me/ti/p/8AQ2JrkKBC">
+      <svg>
+        <image xlink:href="icon/line.svg"width="60px" height="60px"/>
+      </svg>
+    </a>
+    <a href="https://www.instagram.com/chienyuj/"> 
+      <svg>
+          <image xlink:href="icon/instagram.svg"width="60px" height="60px"/>
+      </svg>
+    </a>
+  </div>
+</div>
+<div v-else  style="overflow: hidden;">
+  <div class="scroll">
+    <svg>
+      <image xlink:href="icon/scroll.svg"width="50px" height="120px"/>
+    </svg>
+  </div>
+  <div class="col-6 offset-4" style="height:2vh;margin-top: 15vh;">
+    <svg width="100%" height="270px">
+      <g>
+        <polygon class="path" fill="black" stroke="white" stroke-width="2" points="175.82,154 159.39,137.63 143.01,154 	"/>
+        <g>
+          <polyline class="path" fill="black" stroke="white" stroke-width="2" points="297.72,115.07 227.39,115.07 205.12,137.63 275.46,137.63 297.72,115.07 297.15,115.07 		"/>
+        </g>
+        <path class="path" fill="black" stroke="white" stroke-width="2" d="M251.42,45.6l-18.19,18.19l-73.83,73.83L79.63,58.13C71.39,50.36,60.29,45.6,48.07,45.6
+          c-25.41,0-46.01,20.6-46.01,46.01s20.6,46.01,46.01,46.01c19.06,0,33.8-10.27,40.79-26.79L70.28,91.61
+          c0,12.26-9.94,22.19-22.19,22.19S25.9,103.87,25.9,91.61s9.94-22.19,22.19-22.19c0,0,7.07-1.24,14.66,6.23l3.97,3.91l58.98,58.07
+          l0,0h66.44l41.08-41.08l18.19-18.19V45.6"/>
+        </svg>
+    </div>
+  <div class="hello"><h1>Hello</h1></div>
+  <div class="fade"><h2>Here Is</h2></div>
+  <div class="fade"><h1>Chien-Yu Lin</h1></div>
+  <div class="fade"><h2>I Build Websites</h2></div>
+  <div class="fade"><h2>I Shoot Photos</h2></div>
+  <div class="fade"><h2>I Design</h2></div>
+  <div class="fade"><h1>I <strong style="color: #2A9DF4">Create.</strong></h1></div>
+  <div class="fade"><h1>Services</h1></div>
+  <div class="fade" style="padding-left: 5%;padding-right: 5%;">
+    <div class="container-fluid">
+    <div class="row" style="margin-right: 18px;">
+    <div class="col-4">
+    <div class="box">
+      <h6 style="color:#9a3ee6">Web Design</h6><hr>
+      <h5>網頁設計</h5>
+      <h5>電子商務</h5>
+      <h5>會員系統</h5>
+      <h5>訂單系統</h5>
+      <h4>PHP+Laravel+MySQL</h4>
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="box">
+      <h6 style="color:#2A9DF4">Branding</h6><hr>
+      <h5>品牌視覺</h5>
+      <h5>Logo設計</h5>
+      <h5>名片設計</h5>
+      <h5>廣告設計</h5>
+      <h4>Adobe Illustrator</h4>
+      
+    </div>
+  </div>
+  <div class="col-4">
+    <div class="box">
+        <h6 style="color:#41cccc">Photography</h6><hr>
+        <h5>小型商品攝影</h5>
+        <h5>圖片去背/微後製</h5>
+        <h5>食物攝影</h5>
+        <h5>互惠攝影</h5>
+        <h4>Photoshop+Lightroom</h4>
+    </div>
+  </div>
+  </div>
+</div>
+  </div>
+  <div class="fade"><h1>See My Projects</h1></div>
 
+  <div class="outer-menu">
+    <input class="checkbox-toggle" type="checkbox" />
+    <div class="hamburger">
+      <div></div>
+    </div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="photography.html">Photography</a></li>
+            <li><a href="branding.html">Graphic Design</a></li>
+            <li><a href="websites.html">Websites</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+ <div class="wd"><h1>Contact</h1></div>
+
+  <div class="wd">
+    <a href="https://www.facebook.com/chienyld">
+      <svg>
+        <image xlink:href="icon/facebook.svg" width="100" height="100"/>
+      </svg>
+    </a>
+    <a href="https://line.me/ti/p/8AQ2JrkKBC">
+      <svg>
+        <image xlink:href="icon/line.svg" width="100" height="100"/>
+      </svg>
+    </a>
+    <a href="https://www.instagram.com/chienyuj/">
+      <svg>
+        <image xlink:href="icon/instagram.svg" width="100" height="100"/>
+      </svg>
+    </a>
+  </div>
+  
+</div>
+
+ 
+
+</div>
+<div class="footer" style="background: #000;">
+  <span>Copyright CYL Design 2020</span>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="text.js"></script>
+<script src="ismobile.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script>
-	function myFunction() {
- 	var x = document.getElementById("topnav");
- 	if (x.className === "navvvv") {
-    x.className += " responsive";
- 	} else {
-    x.className = "navvvv";
- 	}
-	}
-</script>
-
-<script>
-
-$(document).ready(function() {  
-$('a[href^="#"]').click(function() {  
-var target = $(this.hash);  
-if (target.length == 0) target = $('a[name="' + this.hash.substr(1) + '"]');  
-if (target.length == 0) target = $('html');  
-$('html, body').animate({ scrollTop: target.offset().top }, 1500);  
-return false;  
-});  
-});		
-const resolver = {
-  resolve: function resolve(options, callback) {
-    // The string to resolve
-    const resolveString = options.resolveString || options.element.getAttribute('data-target-resolver');
-    const combinedOptions = Object.assign({}, options, {resolveString: resolveString});
-    
-    function getRandomInteger(min, max) {
-      return Math.floor(Math.random() * (max - min + 1)) + min;
-    };
-    
-    function randomCharacter(characters) {
-      return characters[getRandomInteger(0, characters.length - 1)];
-    };
-    
-    function doRandomiserEffect(options, callback) {
-      const characters = options.characters;
-      const timeout = options.timeout;
-      const element = options.element;
-      const partialString = options.partialString;
-
-      let iterations = options.iterations;
-
-      setTimeout(() => {
-        if (iterations >= 0) {
-          const nextOptions = Object.assign({}, options, {iterations: iterations - 1});
-
-          // Ensures partialString without the random character as the final state.
-          if (iterations === 0) {
-            element.textContent = partialString;
-          } else {
-            // Replaces the last character of partialString with a random character
-            element.textContent = partialString.substring(0, partialString.length - 1) + randomCharacter(characters);
-          }
-
-          doRandomiserEffect(nextOptions, callback)
-        } else if (typeof callback === "function") {
-          callback(); 
-        }
-      }, options.timeout);
-    };
-    
-    function doResolverEffect(options, callback) {
-      const resolveString = options.resolveString;
-      const characters = options.characters;
-      const offset = options.offset;
-      const partialString = resolveString.substring(0, offset);
-      const combinedOptions = Object.assign({}, options, {partialString: partialString});
-
-      doRandomiserEffect(combinedOptions, () => {
-        const nextOptions = Object.assign({}, options, {offset: offset + 1});
-
-        if (offset <= resolveString.length) {
-          doResolverEffect(nextOptions, callback);
-        } else if (typeof callback === "function") {
-          callback();
-        }
-      });
-    };
-
-    doResolverEffect(combinedOptions, callback);
-  } 
-}
-
-
-const strings = [
-  'Hi there',
-  'Here is Chien Yu Lin',
-  'Welcome To My Site',
-];
-
-let counter = 0;
-
-const options = {
-  // Initial position
-  offset: 0,
-  // Timeout between each random character
-  timeout: 5,
-  // Number of random characters to show
-  iterations: 10,
-  // Random characters to pick from
-  characters: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'l', 'm', 'n', 'o', 'p', 'r', 's', 't', 'u', 'v', 'y'],
-  // String to resolve
-  resolveString: strings[counter],
-  // The element
-  element: document.querySelector('[data-target-resolver]')
-}
-
-// Callback function when resolve completes
-function callback() {
-  setTimeout(() => {
-    counter ++;
-    
-    if (counter >= strings.length) {
-      counter = 0;
-    }
-    
-    let nextOptions = Object.assign({}, options, {resolveString: strings[counter]});
-    resolver.resolve(nextOptions, callback);
-  }, 1000);
-}
-
-resolver.resolve(options, callback);
-/*var canvas= document.getElementById("cav");
-var ctx=canvas.getContext("2d");
-ctx.beginPath();
-ctx.arc(200,80,60,0,2*Math.PI);
-ctx.stroke();*/
-</script>
-<script>
-var c6=document.getElementById("layer6");
-var ctx6=c6.getContext("2d");  
-ctx6.fillStyle="#FF931E";ctx6.beginPath();
-ctx6.arc(100,100,60,0,Math.PI*2,true);
-ctx6.closePath();ctx6.fill();
-var c8=document.getElementById("layer8");
-var ctx8=c8.getContext("2d");
-ctx8.fillStyle = "#000"; 
-ctx8.fillStyle="#fff";ctx8.fillRect(80,20,50,40);    
-var c7=document.getElementById("layer7");
-var ctx7=c7.getContext("2d");     
-ctx7.fillStyle="#fff";ctx7.beginPath();
-ctx7.arc(100,100,50,0,Math.PI*2,true);
-ctx7.closePath();ctx7.fill();
-ctx7.fillStyle = "#000";ctx7.font ="24px Arial";
-ctx7.fillText("HTML", 69, 105);  
-
-			
-var c6=document.getElementById("layer9");
-var ctx6=c6.getContext("2d");  
-ctx6.fillStyle="#29ABE2";ctx6.beginPath();
-ctx6.arc(100,100,60,0,Math.PI*2,true);
-ctx6.closePath();ctx6.fill();
-var c8=document.getElementById("layer11");
-var ctx8=c8.getContext("2d");
-ctx8.fillStyle = "#000"; 
-ctx8.fillStyle="#fff";ctx8.fillRect(80,20,50,40);    
-var c7=document.getElementById("layer10");
-var ctx7=c7.getContext("2d");     
-ctx7.fillStyle="#fff";ctx7.beginPath();
-ctx7.arc(100,100,50,0,Math.PI*2,true);
-ctx7.closePath();ctx7.fill();
-ctx7.fillStyle = "#000";ctx7.font ="24px Arial";
-ctx7.fillText("CSS", 75, 105);  
-
-var c6=document.getElementById("layer12");
-var ctx6=c6.getContext("2d");  
-ctx6.fillStyle="#F9EC4B";ctx6.beginPath();
-ctx6.arc(100,100,60,0,Math.PI*2,true);
-ctx6.closePath();ctx6.fill();
-var c8=document.getElementById("layer14");
-var ctx8=c8.getContext("2d");
-ctx8.fillStyle = "#000"; 
-ctx8.fillStyle="#fff";ctx8.fillRect(80,20,50,40);    
-var c7=document.getElementById("layer13");
-var ctx7=c7.getContext("2d");     
-ctx7.fillStyle="#fff";ctx7.beginPath();
-ctx7.arc(100,100,50,0,Math.PI*2,true);
-ctx7.closePath();ctx7.fill();
-ctx7.fillStyle = "#000";ctx7.font ="26px Arial";
-ctx7.fillText("JS", 85, 105);  
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue!'
+  }
+})
 </script>
 
 </body>
