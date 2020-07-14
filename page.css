@@ -9,12 +9,13 @@
 }
 .box{
     margin-bottom: 30px;
-    padding: 1rem;
-    border-radius: 15px;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 12px;
+    border: solid rgb(250, 250, 250) 1px;
     background-color: #FFF;
     align-items: center;
-    -webkit-filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.4));
-    filter: drop-shadow(12px 12px 7px rgba(0, 0, 0, 0.4))
+    -webkit-filter: drop-shadow(7px 7px 4px rgba(0, 0, 0, 0.4));
+    filter: drop-shadow(7px 7px 4px rgba(0, 0, 0, 0.4))
 }
 .box ul,li{
     align-items: left;

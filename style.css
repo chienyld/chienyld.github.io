@@ -52,10 +52,10 @@ body{
     color: aliceblue;
   }
   .box{
-      margin: 3vh;
+      margin: 0vh 3vh 3vh 3vh;
       padding: 1rem;
       width: 100%;
-      border-radius: 15px;
+      border-radius: 8px;
       background-color: aliceblue;
       align-items: center;
       align-content: center;
