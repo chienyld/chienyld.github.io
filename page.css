@@ -1,29 +1,33 @@
-*{
-    font-family: Montserrat ,Microsoft Jhenghei!important;
+* {
+    font-family: Montserrat, Microsoft Jhenghei!important;
     text-align: center;
 }
-.wboxch{
+
+.wboxch {
     text-align: center;
     font-size: 1.5em;
     padding: 5vh 0 5vh 0;
 }
-.box{
+
+.box {
     margin-bottom: 30px;
     padding: 1rem 2rem 1rem 2rem;
     border-radius: 12px;
-    border: solid rgb(250, 250, 250) 1px;
     background-color: #FFF;
     align-items: center;
-    -webkit-filter: drop-shadow(7px 7px 4px rgba(0, 0, 0, 0.4));
-    filter: drop-shadow(7px 7px 4px rgba(0, 0, 0, 0.4))
+    -webkit-filter: drop-shadow(7px 7px 4px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow(7px 7px 4px rgba(0, 0, 0, 0.1))
 }
-.box ul,li{
+
+.box ul,
+li {
     align-items: left;
     text-align: left !important;
-    font-size: 1.2em;
+    font-size: 1em;
     padding-top: 5px;
 }
-.box span{
-    color:rgb(88, 110, 129);
-    font-size: 1.3em;
+
+.box span {
+    color: rgb(88, 110, 129);
+    font-size: 1em;
 }
