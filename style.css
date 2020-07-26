@@ -1,79 +1,90 @@
-html{
-  margin: 0em;
+html {
+    margin: 0em;
 }
-*{
-  font-family: Montserrat ,Microsoft Jhenghei!important;
+
+* {
+    font-family: Montserrat, Microsoft Jhenghei!important;
 }
-body{
+
+body {
     background-color: black;
     margin: 0em;
 }
-.hello{
+
+.hello {
     text-align: center;
-    font-weight:1000;
+    font-weight: 1000;
     font-family: Montserrat;
     font-size: 3rem;
     margin-top: 10vh;
-    padding-top: 70px;  
+    padding-top: 70px;
     opacity: 1;
     color: aliceblue;
 }
+
 .fade {
     align-content: center;
     text-align: center;
-    font-weight:1000;
+    font-weight: 1000;
     font-family: Montserrat;
     font-size: 3rem;
     margin-top: 30vh;
-    padding-top: 100px;  
+    padding-top: 100px;
     opacity: 1;
     color: aliceblue;
-  }
-  .w{
+}
+
+.w {
     align-content: center;
     text-align: center;
-    font-weight:1000;
+    font-weight: 1000;
     font-family: Montserrat;
     font-size: 3rem;
     margin-top: 20vh;
-    padding-top: 100px;  
+    padding-top: 100px;
     opacity: 1;
     color: aliceblue;
-  }
-  .wd{
+}
+
+.wd {
     align-content: center;
     text-align: center;
-    font-weight:1000;
+    font-weight: 1000;
     font-family: Montserrat;
     font-size: 3rem;
     margin-top: 20vh;
-    padding-top: 100px;  
+    padding-top: 100px;
     opacity: 1;
     color: aliceblue;
-  }
-  .box{
-      margin: 0vh 3vh 3vh 3vh;
-      padding: 1rem;
-      width: 100%;
-      border-radius: 8px;
-      background-color: aliceblue;
-      align-items: center;
-      align-content: center;
-  }
-  .box h6{
+}
+
+.box {
+    margin: 0vh 3vh 3vh 3vh;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 8px;
+    background-color: aliceblue;
+    align-items: center;
+    align-content: center;
+}
+
+.box h6 {
     font-size: 0.5em;
-  }
-  .box h5{
+}
+
+.box h5 {
     font-size: 0.4em;
     margin: 8px;
     color: #494949;
-  }
-  .box h4{
+}
+
+.box h4 {
     font-size: 0.3em;
     margin: 10px;
     color: #8f8f8f;
-  }
-  .mbox{
+}
+
+.mbox {
     -webkit-filter: drop-shadow(5px 5px 5px rgba(58, 58, 58, 0.7));
     filter: drop-shadow(5px 5px 5px rgba(46, 46, 46, 0.7));
     padding: 1rem;
@@ -83,77 +94,97 @@ body{
     align-items: center;
     align-content: center;
     padding-bottom: 3vh;
-  }
-  .mbox h4{
-    font-size: 0.5em;
+}
+
+.mbox h4 {
+    font-size: 0.3em;
     margin: 10px;
     padding: 10px;
-  }
-  .box ,.mbox {
-      color: black;
-  }
-  .w svg{
-      height: 60px;
-      width: 60px;
-      margin: 10px;
-  }
-  .wd svg{
+    color: #8f8f8f;
+}
+
+.mbox h6 {
+    font-size: 0.4em;
+}
+
+.box,
+.mbox {
+    color: black;
+}
+
+.w svg {
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+}
+
+.wd svg {
     height: 100px;
     width: 100px;
     margin: 70px;
 }
-.footer{
-  margin: 0em;
-  color: white;
-  padding-top: 30vh;
-  padding-bottom: 3vh;
-  text-align: center;
-  z-index: 9;
-  background-color: black;
-  background: black;
+
+.footer {
+    margin: 0em;
+    color: white;
+    padding-top: 30vh;
+    padding-bottom: 3vh;
+    text-align: center;
+    z-index: 9;
+    background-color: black;
+    background: black;
 }
-.footer span{
-  bottom: 0;
-  color: #494949;
+
+.footer span {
+    bottom: 0;
+    color: #494949;
 }
-h6,h3{
-  margin-top: 0.5rem;
-  margin-bottom: 0;
-  color: #494949;
-  padding-bottom: 0;
+
+h6,
+h3 {
+    margin-top: 0.5em;
+    margin-bottom: 0;
+    color: #494949;
+    padding-bottom: 0;
 }
-h3{
-  font-size: 3rem;
+
+h3 {
+    font-size: 3rem;
 }
-.swipe{
-  position: fixed;
-  bottom: 0em;
-  left: 0em;
-  animation: breathe 1s infinite;
-  z-index: -1;
-  height: 80px;
-  width: 30px;
+
+.swipe {
+    position: fixed;
+    bottom: 0em;
+    left: 0em;
+    animation: breathe 1s infinite;
+    z-index: -1;
+    height: 80px;
+    width: 30px;
 }
-.scroll{
-  position: fixed;
-  bottom: 0em;
-  left: 0em;
-  animation: breathe 1s infinite;
-  z-index: -1;
-  height: 120px;
-  width: 50px;
+
+.scroll {
+    position: fixed;
+    bottom: 0em;
+    left: 0em;
+    animation: breathe 1s infinite;
+    z-index: -1;
+    height: 120px;
+    width: 50px;
 }
+
 @keyframes breathe {
-	0%{
-		opacity: 0.5;
-	}
-	50%{
-		opacity: 1;
-	}
-	100%{
-		opacity: 0.5;
-	}
+    0% {
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+    }
 }
+
+
 /*
 #blue{
   color: #0f4c82;
