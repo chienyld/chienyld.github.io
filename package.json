@@ -6,11 +6,20 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "format": "prettier --write \"pages/**/*.{js,vue,scss}\" \"components/**/*.{js,vue,scss}\""
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@nuxtjs/tailwindcss": "^6.8.0",
     "@types/node": "^18",
-    "nuxt": "^3.5.2"
+    "autoprefixer": "^10.4.14",
+    "nuxt": "^3.5.2",
+    "postcss": "^8.4.24",
+    "prettier": "2.8.8"
+  },
+  "dependencies": {
+    "@vueuse/motion": "^2.0.0",
+    "nuxt-use-motion": "^2.0.0-beta.11"
   }
 }
