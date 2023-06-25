@@ -1,14 +1,32 @@
 <template>
   <div>
+    <img
+      class="animate-[bounce_10s_linear_infinite] duration-500 h-[50vh] w-[55vh] md:h-[50vw] md:w-[57vw] -left-[20vh] md:-left-[20vw] absolute top-[50vh] opacity-50 -z-[1]"
+      src="/static/images/bubble.svg"
+      alt=""
+    />
+    <img
+      class="animate-[bounce_15s_linear_infinite] duration-500 h-[50vh] w-[55vh] md:h-[45vw] md:w-[50vw] -right-10 absolute top-[70vh] opacity-50 -z-[1]"
+      src="/static/images/bubble2.svg"
+      alt=""
+    />
     <div
-      class="w-full h-screen absolute left-0 top-0 -z-10 bg-gradient-to-tr from-indigo-800 via-purple-700 to-pink-600"
+      class="w-full h-[3000px] absolute left-0 top-0 -z-10 bg-gradient-to-tr from-indigo-800 via-purple-800 to-pink-600"
     ></div>
+
     <div
       class="hidden md:flex max-w-[80%] m-auto py-4 text-white justify-between"
     >
-      <div class="pt-4">
-        <h1 class="text-white font-bold text-2xl">聚華數位科技</h1>
-        <h2 class="text-sm font-bold">Juhua Digital Corp.</h2>
+      <div
+        class="pt-4 flex gap-2 hover:opacity-70 transition ease-in-out delay-100"
+      >
+        <div class="p-1">
+          <img class="w-11 h-11" src="/static/images/logo.svg" alt="" />
+        </div>
+        <div>
+          <h1 class="text-white font-bold text-2xl">聚華數位科技</h1>
+          <h2 class="text-sm font-bold">Juhua Digital Corp.</h2>
+        </div>
       </div>
       <div class="min-w-[70%] flex justify-end gap-4">
         <button
@@ -72,7 +90,17 @@
     </div>
     <!--Mobile-->
     <div class="md:hidden w-full flex justify-between p-4">
-      <div></div>
+      <div class="flex gap-2 p-2 hover:opacity-50">
+        <div class="p-1 opacity-70">
+          <img class="w-11 h-11" src="/static/images/logo.svg" alt="" />
+        </div>
+        <div>
+          <h1 class="text-white font-bold text-2xl">聚華數位科技</h1>
+          <h2 class="text-sm font-bold text-white opacity-70">
+            Juhua Digital Corp.
+          </h2>
+        </div>
+      </div>
       <button @click="toggleMenu" class="flex items-center text-white gap-3">
         <div
           class="rounded-full bg-white/30 backdrop-blur-sm shadow h-12 w-12 flex-none items-center pt-4"
@@ -84,7 +112,7 @@
       </button>
     </div>
     <div v-if="isOpen" class="md:hidden">
-      <div class="min-w-[70%] h-screen text-xl">
+      <div class="min-w-[70%] h-screen text-xl pt-12">
         <button
           v-motion
           :initial="initial"
