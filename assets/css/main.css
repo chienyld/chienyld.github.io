@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 .wait-menu {
     animation: waiting 0.5s;
 }

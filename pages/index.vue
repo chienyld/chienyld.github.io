@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <section id="first">
+  <section id="first" class="h-screen">
     <div class="w-[80%] m-auto text-white text-[1.6rem] md:text-[2rem]">
       <div class="md:grid md:grid-cols-5 h-[90vh]">
         <div class="md:col-span-2 mt-[20%] md:mt-40 leading-loose font-bold">
@@ -30,6 +30,7 @@
             聚華數位科技提供多樣化資訊服務。
           </h2>
           <h2
+            class="text-[18px] mt-4"
             v-motion
             :initial="initial"
             :enter="{
@@ -40,17 +41,16 @@
                 delay: 600,
               },
             }"
-            class="text-[18px] mt-4"
           >
-            WEB客製化網站系統 / APP應用程式等開發
+            幫助您建置系統，提升營運效率、降低管理成本，搭上數位時代的順風車。
           </h2>
-          <NuxtLink :to="'services'">
+          <a href="#second">
             <button
               class="leading-10 px-8 py-1 mt-32 text-[18px] rounded-xl overflow-hidden bg-pink-500 hover:bg-pink-700 shadow text-white transition ease-in-out delay-150"
             >
               瞭解更多
             </button>
-          </NuxtLink>
+          </a>
         </div>
         <div class="hidden md:block relative md:col-span-3 w-full">
           <img
@@ -64,12 +64,12 @@
             alt=""
           />
           <img
-            class="absolute animate-bounce m-auto h-6 w-4 right-[300px] top-[280px]"
+            class="absolute animate-[bounce_5s_linear_infinite] m-auto h-6 w-4 right-[300px] top-[280px]"
             src="/static/images/part2.png"
             alt=""
           />
           <img
-            class="absolute animate-bounce m-auto h-16 w-12 right-[260px] top-[360px]"
+            class="absolute animate-[bounce_3s_linear_infinite] m-auto h-16 w-12 right-[260px] top-[360px]"
             src="/static/images/part3.png"
             alt=""
           />
@@ -78,7 +78,7 @@
     </div>
   </section>
   <section id="second">
-    <div></div>
+    <Services />
   </section>
 </template>
 

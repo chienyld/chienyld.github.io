@@ -1,33 +1,37 @@
 <template>
   <div>
-    <img
-      class="animate-[bounce_10s_linear_infinite] duration-500 h-[50vh] w-[55vh] md:h-[50vw] md:w-[57vw] -left-[20vh] md:-left-[20vw] absolute top-[50vh] opacity-50 -z-[1]"
-      src="/static/images/bubble.svg"
-      alt=""
-    />
-    <img
-      class="animate-[bounce_15s_linear_infinite] duration-500 h-[50vh] w-[55vh] md:h-[45vw] md:w-[50vw] -right-10 absolute top-[70vh] opacity-50 -z-[1]"
-      src="/static/images/bubble2.svg"
-      alt=""
-    />
+    <div class="absolute -z-[1] w-screen overflow-x-hidden h-[200vh]">
+      <img
+        class="animate-[bounce_10s_linear_infinite] duration-500 h-[50vh] w-[55vh] md:h-[50vw] md:w-[57vw] -left-[20vh] md:-left-[20vw] absolute top-[50vh] opacity-50 -z-[1]"
+        src="/static/images/bubble.svg"
+        alt=""
+      />
+      <img
+        class="animate-[bounce_15s_linear_infinite] duration-500 h-[50vh] w-[55vh] md:h-[45vw] md:w-[50vw] -right-10 absolute top-[70vh] opacity-50 -z-[1]"
+        src="/static/images/bubble2.svg"
+        alt=""
+      />
+    </div>
     <div
-      class="w-full h-[3000px] absolute left-0 top-0 -z-10 bg-gradient-to-tr from-indigo-800 via-purple-800 to-pink-600"
+      class="w-full h-[300vh] absolute left-0 top-0 -z-10 bg-gradient-to-tr from-indigo-800 via-purple-800 to-pink-600"
     ></div>
 
     <div
       class="hidden md:flex max-w-[80%] m-auto py-4 text-white justify-between"
     >
-      <div
-        class="pt-4 flex gap-2 hover:opacity-70 transition ease-in-out delay-100"
-      >
-        <div class="p-1">
-          <img class="w-11 h-11" src="/static/images/logo.svg" alt="" />
+      <NuxtLink :to="'/'">
+        <div
+          class="pt-4 flex gap-2 hover:opacity-70 transition ease-in-out delay-100"
+        >
+          <div class="p-1">
+            <img class="w-11 h-11" src="/static/images/logo.svg" alt="" />
+          </div>
+          <div>
+            <h1 class="text-white font-bold text-2xl">聚華數位科技</h1>
+            <h2 class="text-sm font-bold">Juhua Digital Corp.</h2>
+          </div>
         </div>
-        <div>
-          <h1 class="text-white font-bold text-2xl">聚華數位科技</h1>
-          <h2 class="text-sm font-bold">Juhua Digital Corp.</h2>
-        </div>
-      </div>
+      </NuxtLink>
       <div class="min-w-[70%] flex justify-end gap-4">
         <button
           v-motion
@@ -54,7 +58,7 @@
           }"
           class="p-2.5 col-span-4 text-white font-medium py-4 px-4 hover:text-indigo-100"
         >
-          <NuxtLink :to="'projects'">服務項目</NuxtLink>
+          <NuxtLink :to="'services'">服務項目</NuxtLink>
         </button>
         <button
           v-motion
@@ -138,7 +142,7 @@
           }"
           class="w-full text-white font-medium py-4 px-4"
         >
-          <NuxtLink :to="'projects'">服務項目</NuxtLink>
+          <NuxtLink :to="'services'">服務項目</NuxtLink>
         </button>
         <button
           v-motion

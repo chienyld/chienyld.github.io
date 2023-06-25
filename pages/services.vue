@@ -1,7 +1,13 @@
 <template>
-  <div></div>
+  <div class="service h-[200vh] md:h-[100vh] overflow-hidden">
+    <Navbar />
+    <Services />
+  </div>
 </template>
 
 <script setup></script>
-
-<style lang="scss" scoped></style>
+<style>
+.service{
+  overflow: hidden !important;
+}
+</style>
