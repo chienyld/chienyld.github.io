@@ -24,7 +24,7 @@
           class="pt-4 flex gap-2 hover:opacity-70 transition ease-in-out delay-100"
         >
           <div class="p-1">
-            <img class="w-11 h-11" src="/static/images/logo.svg" alt="" />
+            <img class="w-11 h-11" src="/static/images/logo-gray.svg" alt="" />
           </div>
           <div>
             <h1 class="text-white font-bold text-2xl">聚華數位科技</h1>
