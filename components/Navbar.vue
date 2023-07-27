@@ -13,7 +13,7 @@
       />
     </div>
     <div
-      class="w-full h-[300vh] absolute left-0 top-0 -z-10 bg-gradient-to-tr from-indigo-800 via-purple-800 to-pink-600"
+      class="w-full md:min-h-[200vh] min-h-[300vh] absolute left-0 top-0 -z-10 bg-gradient-to-tr from-indigo-800 via-purple-800 to-pink-600"
     ></div>
 
     <div
@@ -96,7 +96,7 @@
     <div class="md:hidden w-full flex justify-between p-4">
       <div class="flex gap-2 p-2 hover:opacity-50">
         <div class="p-1 opacity-70">
-          <img class="w-11 h-11" src="/static/images/logo.svg" alt="" />
+          <img class="w-11 h-11" src="/static/images/logo-gray.svg" alt="" />
         </div>
         <div>
           <h1 class="text-white font-bold text-2xl">聚華數位科技</h1>
