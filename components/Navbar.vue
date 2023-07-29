@@ -41,7 +41,7 @@
             y: 0,
             opacity: 1,
           }"
-          class="p-2.5 col-span-4 text-white font-medium py-4 px-4 hover:text-indigo-100"
+          class="p-2.5 col-span-4 text-white font-semibold py-4 px-4 hover:text-indigo-100"
         >
           <NuxtLink :to="'about'">關於聚華</NuxtLink>
         </button>
@@ -56,7 +56,7 @@
               delay: 200,
             },
           }"
-          class="p-2.5 col-span-4 text-white font-medium py-4 px-4 hover:text-indigo-100"
+          class="p-2.5 col-span-4 text-white font-semibold py-4 px-4 hover:text-indigo-100"
         >
           <NuxtLink :to="'services'">服務項目</NuxtLink>
         </button>
@@ -71,7 +71,7 @@
               delay: 400,
             },
           }"
-          class="p-2.5 col-span-4 text-white font-medium py-4 px-4 hover:text-indigo-100"
+          class="p-2.5 col-span-4 text-white font-semibold py-4 px-4 hover:text-indigo-100"
         >
           <NuxtLink :to="'projects'">最新消息</NuxtLink>
         </button>
@@ -86,7 +86,7 @@
               delay: 600,
             },
           }"
-          class="p-2.5 col-span-4 text-white font-medium py-4 px-4 hover:text-indigo-100"
+          class="p-2.5 col-span-4 text-white font-semibold py-4 px-4 hover:text-indigo-100"
         >
           <NuxtLink :to="'projects'">歷年案例</NuxtLink>
         </button>
@@ -125,7 +125,7 @@
             y: 0,
             opacity: 1,
           }"
-          class="w-full text-white font-medium py-4 px-4"
+          class="w-full text-white font-semibold py-4 px-4"
         >
           <NuxtLink :to="'about'">關於聚華</NuxtLink>
         </button>
@@ -140,7 +140,7 @@
               delay: 200,
             },
           }"
-          class="w-full text-white font-medium py-4 px-4"
+          class="w-full text-white font-semibold py-4 px-4"
         >
           <NuxtLink :to="'services'">服務項目</NuxtLink>
         </button>
@@ -155,7 +155,7 @@
               delay: 400,
             },
           }"
-          class="w-full text-white font-medium py-4 px-4"
+          class="w-full text-white font-semibold py-4 px-4"
         >
           <NuxtLink :to="'projects'">最新消息</NuxtLink>
         </button>
@@ -170,7 +170,7 @@
               delay: 600,
             },
           }"
-          class="w-full text-white font-medium py-4 px-4"
+          class="w-full text-white font-semibold py-4 px-4"
         >
           <NuxtLink :to="'projects'">歷年案例</NuxtLink>
         </button>

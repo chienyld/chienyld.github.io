@@ -7,7 +7,7 @@
 
 <script setup></script>
 <style>
-.service{
+.service {
   overflow: hidden !important;
 }
 </style>
