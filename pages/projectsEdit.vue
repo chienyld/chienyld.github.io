@@ -14,22 +14,24 @@
           v-for="project in projects"
           class="tranition m-auto mb-6 w-[95%] overflow-hidden rounded-[20px] bg-white/30 text-center shadow-lg backdrop-blur-sm duration-200 ease-in-out hover:scale-105 hover:opacity-90 hover:shadow-2xl"
         >
-          <div class="flex h-64 w-full justify-center md:h-80">
-            <img
-              :src="project.image"
-              class="w-full object-cover"
-              alt="聚華數位科技"
-              loading="lazy"
-            />
-          </div>
-          <div class="p-6">
-            <h2 class="text-xl font-bold">{{ project.title }}</h2>
-            <div class="px-4 py-4 text-[#ebebeb] md:px-12">
-              <span>
-                {{ project.content }}
-              </span>
+          <NuxtLink :to="'/project/' + project.id">
+            <div class="flex h-64 w-full justify-center md:h-80">
+              <img
+                :src="project.image"
+                class="w-full object-cover"
+                alt="聚華數位科技"
+                loading="lazy"
+              />
             </div>
-          </div>
+            <div class="p-6">
+              <h2 class="text-xl font-bold">{{ project.title }}</h2>
+              <div class="px-4 py-4 text-[#ebebeb] md:px-12">
+                <span>
+                  {{ project.content }}
+                </span>
+              </div>
+            </div>
+          </NuxtLink>
         </div>
       </div>
     </div>

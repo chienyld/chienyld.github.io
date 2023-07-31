@@ -1,7 +1,12 @@
 <template>
-  <div class="service h-[200vh] md:h-[100vh] overflow-hidden">
-    <Navbar />
-    <Services />
+  <div class="service">
+    <div
+      class="-z-10 min-h-screen w-full bg-gradient-to-tr from-indigo-800 via-purple-800 to-pink-600"
+    >
+      <Navbar :navHeight="'h-screen md:h-screen'" />
+      <Services />
+      <MyFooter />
+    </div>
   </div>
 </template>
 
