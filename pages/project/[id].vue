@@ -30,8 +30,16 @@
         </div>
         <div class="py-2">
           <label for="" class="px-1 text-white">內容</label>
-          <input
+          <textarea
             v-model="project.content"
+            type="text"
+            class="w-full rounded-xl bg-white/30 px-6 py-2 text-left text-white shadow-lg backdrop-blur-sm focus:bg-white/20"
+          ></textarea>
+        </div>
+        <div class="py-2">
+          <label for="" class="px-1 text-white">圖片</label>
+          <input
+            v-model="project.image"
             type="text"
             class="w-full rounded-xl bg-white/30 px-6 py-2 text-left text-white shadow-lg backdrop-blur-sm focus:bg-white/20"
           />
@@ -56,7 +64,9 @@ import { ref, onMounted } from "vue";
 onMounted(async () => {
   const res = await getProject(id);
   currentData.value = res;
+  project.value = currentData.value[0];
 });
+const router = useRouter();
 const { id } = useRoute().params;
 const currentData = ref({
   title: "",
@@ -65,14 +75,17 @@ const currentData = ref({
   image: "",
 });
 const project = ref({
-  id:id,
+  id: id,
   title: "",
   subtitle: "",
   content: "",
-  image: "https://source.unsplash.com/featured/300x300",
+  image: "",
 });
 const submit = async () => {
+  project.value.image =
+    "https://drive.google.com/uc?export=view&id=" + project.value.image;
   const res = await putProject(id, project.value);
   console.log(res);
+  router.push({ path: "/projectsEdit" });
 };
 </script>

@@ -175,7 +175,7 @@
 </template>
 
 <script setup>
-import { onMounted, ref, toRef, watchEffect } from "vue";
+import { ref, toRef } from "vue";
 
 const props = defineProps(["navHeight"]);
 const navHeight = toRef(props, "navHeight");
@@ -188,8 +188,5 @@ const initial = ref({
   scale: 0.5,
   y: 100,
   opacity: 0,
-});
-watchEffect(() => {
-  console.log(navHeight.value);
 });
 </script>

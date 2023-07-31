@@ -22,9 +22,9 @@
               loading="lazy"
             />
           </div>
-          <div class="p-6">
+          <div class="h-44 overflow-hidden px-8 py-6">
             <h2 class="text-xl font-bold">{{ project.title }}</h2>
-            <div class="px-4 py-4 text-[#ebebeb] md:px-12">
+            <div class="h-[90px] overflow-hidden py-4 text-[#ebebeb]">
               <span>
                 {{ project.content }}
               </span>

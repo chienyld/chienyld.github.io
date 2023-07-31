@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "juhua-digital",
   "private": true,
   "scripts": {
     "build": "nuxt build",
