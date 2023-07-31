@@ -65,6 +65,7 @@ const currentData = ref({
   image: "",
 });
 const project = ref({
+  id:id,
   title: "",
   subtitle: "",
   content: "",
