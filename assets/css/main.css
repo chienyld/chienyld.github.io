@@ -13,6 +13,9 @@
 *:focus {
     outline: none !important;
 }
+html{
+    background-color:#28282B;
+}
 .wait-menu {
     animation: waiting 0.5s;
 }

@@ -1,8 +1,6 @@
 <template>
   <div class="service">
-    <div
-      class="-z-10 min-h-screen w-full bg-gradient-to-tr from-indigo-800 via-purple-800 to-pink-600"
-    >
+    <div class="-z-10 min-h-screen w-full bg-[#28282B]">
       <Navbar :navHeight="'h-screen md:h-screen'" />
       <Services />
       <MyFooter />

@@ -5,8 +5,9 @@
     <section id="first" class="h-screen">
       <div class="m-auto w-[80%] text-[1.6rem] text-white md:text-[2rem]">
         <div class="h-[90vh] md:grid md:grid-cols-5">
-          <div class="mt-[20%] font-bold leading-loose md:col-span-2 md:mt-40">
+          <div class="mt-40 font-bold md:col-span-2">
             <h2
+              class="my-6 text-5xl md:text-7xl"
               v-motion
               :initial="initial"
               :enter="{
@@ -15,9 +16,10 @@
                 opacity: 1,
               }"
             >
-              用對的方法，做對的事。
+              Hi,
             </h2>
             <h2
+              class="my-6 text-5xl md:text-6xl"
               v-motion
               :initial="initial"
               :enter="{
@@ -29,10 +31,10 @@
                 },
               }"
             >
-              聚華數位科技提供多樣化資訊服務
+              我是林謙佑，
             </h2>
             <h2
-              class="mt-4 text-[18px]"
+              class="my-6 mt-4 text-2xl text-yellow-300 md:text-3xl"
               v-motion
               :initial="initial"
               :enter="{
@@ -44,14 +46,15 @@
                 },
               }"
             >
-              幫助您建置系統，提升營運效率、降低管理成本，搭上數位時代的順風車。
+              一名網路系統開發工程師。
             </h2>
             <div class="mt-32 flex justify-center md:justify-start">
               <a href="#second">
                 <button
-                  class="overflow-hidden rounded-xl bg-pink-500 px-8 py-1 text-[18px] leading-10 text-white shadow transition delay-150 ease-in-out hover:bg-pink-700"
+                  class="flex items-center gap-1 overflow-hidden rounded-xl bg-yellow-500 px-8 py-1 text-[18px] leading-10 text-white shadow transition delay-150 ease-in-out hover:bg-yellow-600"
                 >
-                  瞭解更多
+                  關於我
+                  <DownArrow />
                 </button>
               </a>
             </div>
@@ -84,6 +87,16 @@
     <section id="second">
       <Services />
     </section>
+    <section id="third">
+      <Experience />
+    </section>
+    <section id="fourth">
+      <Projects />
+    </section>
+    <section id="fifth">
+      <Contact />
+    </section>
+    <MyFooter />
   </div>
 </template>
 

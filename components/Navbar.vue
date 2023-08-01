@@ -1,7 +1,7 @@
 <template>
   <div class="pt-20 md:pt-0">
     <div
-      class="absolute left-0 top-0 -z-10 w-full bg-gradient-to-tr from-indigo-800 via-purple-800 to-pink-600"
+      class="absolute left-0 top-0 -z-10 w-full bg-[#28282B]"
       :class="navHeight"
     ></div>
 
@@ -13,11 +13,15 @@
           class="flex gap-2 pt-4 transition delay-100 ease-in-out hover:opacity-70"
         >
           <div class="p-1">
-            <img class="h-11 w-11" src="/static/images/logo-gray.svg" alt="" />
+            <img
+              class="h-11 w-11"
+              src="/static/images/JavaScript-logo.png"
+              alt=""
+            />
           </div>
           <div>
-            <h1 class="text-2xl font-bold text-white">聚華數位科技</h1>
-            <h2 class="text-sm font-bold">Juhua Digital Ltd.</h2>
+            <h1 class="text-2xl font-bold text-white">林謙佑</h1>
+            <h2 class="text-sm font-bold">JavaScript Developer</h2>
           </div>
         </div>
       </NuxtLink>
@@ -32,7 +36,7 @@
           }"
           class="col-span-4 p-2.5 px-4 py-4 font-semibold text-white hover:text-indigo-100"
         >
-          <NuxtLink :to="'about'">關於聚華</NuxtLink>
+          <a href="#second">技能 Skills</a>
         </button>
         <button
           v-motion
@@ -47,7 +51,7 @@
           }"
           class="col-span-4 p-2.5 px-4 py-4 font-semibold text-white hover:text-indigo-100"
         >
-          <NuxtLink :to="'services'">服務項目</NuxtLink>
+          <a href="#third">經歷 Experience</a>
         </button>
         <button
           v-motion
@@ -62,7 +66,7 @@
           }"
           class="col-span-4 p-2.5 px-4 py-4 font-semibold text-white hover:text-indigo-100"
         >
-          <NuxtLink :to="'projects'">最新消息</NuxtLink>
+          <a href="#fourth">作品集 Portfolio</a>
         </button>
         <button
           v-motion
@@ -77,23 +81,27 @@
           }"
           class="col-span-4 p-2.5 px-4 py-4 font-semibold text-white hover:text-indigo-100"
         >
-          <NuxtLink :to="'projects'">歷年案例</NuxtLink>
+          <a href="#fifth">聯絡我 Contact</a>
         </button>
       </div>
     </div>
     <!--Mobile-->
     <div
-      class="fixed top-0 z-30 flex h-24 w-full justify-between bg-purple-800 p-4 shadow-sm md:hidden"
+      class="fixed top-0 z-30 flex h-24 w-full justify-between bg-[#28282B] p-4 shadow-sm md:hidden"
     >
       <NuxtLink :to="'/'">
         <div class="flex gap-2 p-2 hover:opacity-50">
           <div class="p-1 opacity-70">
-            <img class="h-11 w-11" src="/static/images/logo-gray.svg" alt="" />
+            <img
+              class="h-11 w-11"
+              src="/static/images/JavaScript-logo.png"
+              alt=""
+            />
           </div>
           <div>
-            <h1 class="text-2xl font-bold text-white">聚華數位科技</h1>
+            <h1 class="text-2xl font-bold text-white">林謙佑</h1>
             <h2 class="text-sm font-bold text-white opacity-70">
-              Juhua Digital Ltd.
+              JavaScript Developer
             </h2>
           </div>
         </div>
@@ -110,9 +118,10 @@
     </div>
     <div v-if="isOpen" class="md:hidden">
       <div
-        class="fixed z-30 mt-4 h-screen w-full bg-gradient-to-tr from-indigo-800 via-purple-800 to-pink-600 pt-12 text-xl"
+        class="fixed z-30 mt-4 h-screen w-full bg-gradient-to-tr from-[#28282B] to-[#36363b] pt-12 text-xl"
       >
         <button
+          @click="() => (isOpen = false)"
           v-motion
           :initial="initial"
           :enter="{
@@ -122,9 +131,10 @@
           }"
           class="w-full px-4 py-4 font-semibold text-white"
         >
-          <NuxtLink :to="'about'">關於聚華</NuxtLink>
+          <a href="#second">技能 Skills</a>
         </button>
         <button
+          @click="() => (isOpen = false)"
           v-motion
           :initial="initial"
           :enter="{
@@ -137,9 +147,10 @@
           }"
           class="w-full px-4 py-4 font-semibold text-white"
         >
-          <NuxtLink :to="'services'">服務項目</NuxtLink>
+          <a href="#third">經歷 Experience</a>
         </button>
         <button
+          @click="() => (isOpen = false)"
           v-motion
           :initial="initial"
           :enter="{
@@ -152,9 +163,10 @@
           }"
           class="w-full px-4 py-4 font-semibold text-white"
         >
-          <NuxtLink :to="'projects'">最新消息</NuxtLink>
+          <a href="#fourth">作品集 Portfolio</a>
         </button>
         <button
+          @click="() => (isOpen = false)"
           v-motion
           :initial="initial"
           :enter="{
@@ -167,7 +179,7 @@
           }"
           class="w-full px-4 py-4 font-semibold text-white"
         >
-          <NuxtLink :to="'projects'">歷年案例</NuxtLink>
+          <a href="#fifth">聯絡我 Contact</a>
         </button>
       </div>
     </div>
